@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-Bold.woff);
+    font-weight: 700;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-ExtraBlack.woff);
+    font-weight: 900;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-ExtraBold.woff);
+    font-weight: 850;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-SemiBold.woff);
+    font-weight: 600;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-Black.woff);
+    font-weight: 800;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-Regular.woff);
+    font-weight: 500;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-Light.woff);
+    font-weight: 300;
+}@font-face {
+    font-family: 'yeakan';
+    src: url(../fonts/YekanBakhFaNum-Thin.woff);
+    font-weight: 100;
+}

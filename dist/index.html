@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مبلمان راحتی</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font.css" />
+  </head>
+  <body class="font-yeakan">
+    <!-- this is for header -->
+
+    <header data-header>
+      <div
+        class="container flex items-center justify-between w-full py-5 gap-x-7"
+      >
+        <h3 class="">
+          <span
+            class="font-bold tracking-tighter text-lg text-blue ml-2 cursor-pointer"
+            >AK</span
+          >ای کی دیزاین
+        </h3>
+
+        <!-- navigation -->
+        <nav>
+          <ul class="menu md:flex items-center justify-center gap-x-20">
+            <li class="nav-item">
+              <a
+                data-nav-link
+                href="#home"
+                class="nav-link hover:hover-effect-blue"
+                >خانه</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                data-nav-link
+                href="#services"
+                class="nav-link hover:hover-effect-blue"
+                >سرویس ها</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                data-nav-link
+                href="#decorasion"
+                class="nav-link hover:hover-effect-blue"
+                >دکوراسیون</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                data-nav-link
+                href="#products"
+                class="nav-link hover:hover-effect-blue"
+                >محصولات</a
+              >
+            </li>
+
+            <!-- login bts -->
+            <li class="flex flex-col items-center md:hidden">
+              <div class="flex items-center">
+                <button class="blue-btn ml-2">
+                  <a href="login-page.html">ورود</a>
+                </button>
+                <a href="#shoping">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/external-creatype-outline-colourcreatype/64/external-bag-interface-a2-creatype-outline-colourcreatype.png"
+                    alt="external-bag-interface-a2-creatype-outline-colourcreatype"
+                  />
+                </a>
+              </div>
+              <!-- search bar input -->
+              <div class="relative mt-12">
+                <input type="search" class="search-bar" />
+                <i
+                  class="fa-solid fa-magnifying-glass serch-icon absolute left-2 top-[54%] text-xl"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- action btns for login and shoping basket -->
+        <div class="hidden md:flex md:items-center">
+          <button class="blue-btn ml-2"><a href="login-page.html">ورود</a></button>
+          <img
+            width="20"
+            height="20"
+            src="https://img.icons8.com/external-creatype-outline-colourcreatype/64/external-bag-interface-a2-creatype-outline-colourcreatype.png"
+            alt="external-bag-interface-a2-creatype-outline-colourcreatype"
+          />
+        </div>
+        <!-- humburger menu -->
+        <div class="md:hidden humb-el z-30">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- landing page -->
+    <section id="home" class="home">
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-y-10"
+      >
+        <!-- right -->
+        <div class="pr-14 pt-10 w-full md:max-w-[70%]">
+          <!-- heading for the landing page and left section -->
+          <h1 class="text-4xl md:text-5xl font-bold mb-5 md:leading-[60px]">
+            <span class="text-blue"> دیزاین داخلی </span> , مناسب <br />شور و
+            اشتیاق در زندگی
+          </h1>
+          <p class="text-gray">
+            باما طراحی مبلمان مدرن و با حس خریدلحظه ای و قیمتی مقرون به صرفه را
+            تجربه کنید .با کارشناسان ما به صورت تلفنیو در منزل خود صحبت کنید و
+            مشاوره بگیرید
+          </p>
+          <!-- this div for btns -->
+          <div class="mt-7 flex items-center">
+            <button class="blue-btn font-bold">
+              خرید
+              <i class="fas fa-arrow-left-long align-middle mr-2"></i>
+            </button>
+            <a
+              class="mr-10 font-bold hover:hover-effect-blue duration-[2s]"
+              href="contact"
+            >
+              <i class="fa-solid fa-phone-volume fa-flip-horizontal ml-2"></i
+              >تماس با ما</a
+            >
+          </div>
+        </div>
+        <!-- left -->
+
+        <div class="md:flex justify-center items-center md:w-full relative">
+          <div class="landing-img md:w-1/2">
+            <img
+              class="w-full h-full object-cover"
+              src="../images/background2.jpg"
+              alt=""
+            />
+          </div>
+          <!-- badges -->
+          <div
+            class="badge flex absolute -right-5 bottom-2 bg-red w-[300px] h-[120px]"
+          >
+            <div class="h-full w-1/3 p-1 z-20">
+              <img
+                class="object-cover w-full h-full"
+                src="../images/badge2 (1).jpg"
+                alt=""
+              />
+            </div>
+            <div class="">
+              <h5 class="font-bold py-2">صندلی چوبی</h5>
+              <p class="text-sm py-1">صندلی چوبی مدرن مناسب همه فضا ها</p>
+              <button class="blue-btn px-5 py-1 text-sm">دیدن</button>
+            </div>
+          </div>
+
+          <!-- badges -->
+          <div
+            class="badge flex absolute left-0 top-32 bg-red w-[300px] h-[120px]"
+          >
+            <div class="h-full w-1/3 p-1 z-20">
+              <img
+                class="object-cover w-full h-full"
+                src="../images/badge2 (2).jpg"
+                alt=""
+              />
+            </div>
+            <div>
+              <h5 class="font-bold py-2">صندلی چوبی</h5>
+              <p class="text-sm py-1">صندلی چوبی مدرن مناسب همه فضا ها</p>
+              <button class="blue-btn px-5 py-1 text-sm">دیدن</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- features  -->
+    <section id="services" class="featuers mt-[100px]">
+      <div class="container my-10">
+        <div class="text-center">
+          <h2 class="heading">
+            بهترین <span class="text-blue">سرویس ها</span> برای شما
+          </h2>
+          <p class="text-gray">از پشتیبانی ما برای خرید آسان لذت ببرید</p>
+        </div>
+        <!-- features -->
+        <div
+          class="wrapper grid grid-cols-2 md:grid-cols-4 items-center justify-between my-7 gap-6"
+        >
+          <div class="flex items-center md:justify-center p-1 feature">
+            <div class="feature-img">
+              <i class="fa-regular fa-circle-question"></i>
+            </div>
+            <div>
+              <p class="mr-2 text-sm font-bold">
+                گرانتی دراز مدت برای <br />اجناس با کیفیت ما
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center md:justify-center p-1 feature">
+            <div class="feature-img">
+              <i class="fa-solid fa-truck"></i>
+            </div>
+            <div>
+              <p class="mr-2 text-sm font-bold">
+                ارسال سریع<br />به سراسر دنیا
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center md:justify-center p-1 feature">
+            <div class="feature-img">
+              <i class="fa-regular fa-comments"></i>
+            </div>
+            <div>
+              <p class="mr-2 text-sm font-bold">
+                پشتیبانی رایگان <br />برای نیار های دیزاین
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-center md:justify-center p-1 feature">
+            <div class="feature-img">
+              <i class="fa-regular fa-handshake"></i>
+            </div>
+            <div>
+              <p class="mr-2 text-sm font-bold">
+                قیمت ویزه پایین تر از<br />بازار برای کاربران سایت
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- newest product -->
+    <section id="decorasion" class="my-[150px]">
+      <div class="container grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- product img -->
+        <div class="w-full h-[600px] md:order-2">
+          <img
+            class="object-cover h-full w-full rounded-md"
+            src="/images/product1.jpg"
+            alt="white-minimal-sofa"
+          />
+        </div>
+        <div>
+          <!-- product-details -->
+          <div class="my-12 md:order-1 md:relative flex flex-col">
+            <!-- heading -->
+            <div>
+              <h2 class="heading text-right">
+                بهترین <span class="text-blue">سرویس ها</span> برای شما
+              </h2>
+              <p class="text-gray text-right my-12">
+                مبل‌های مینیمال یک انتخاب عالی برای دکوراسیون منزل شما می‌باشند.
+                این نوع مبل‌ها با طراحی ساده و خطوط کمیاب خود، به فضای منزل شما
+                زیبایی و شیکی می‌بخشند. طراحی مینیمال مبل‌ها به شما اجازه می‌دهد
+                تا فضای بیشتری را در منزلتان ایجاد کنید و به راحتی با دیگر قطعات
+                دکوراسیون منزلتان هماهنگ شوند.
+              </p>
+            </div>
+            <!-- this div for textcther -->
+            <div
+              class="flex items-center justify-between md:justify-stretch md:gap-x-12"
+            >
+              <div class="flex flex-col gap-y-4">
+                <div class="flex items-center gap-x-2">
+                  <i class="fa-regular fa-circle-check text-blue"></i>
+                  <p>جنس های مرغوب</p>
+                </div>
+
+                <div class="flex items-center gap-x-2">
+                  <i class="fa-regular fa-circle-check text-blue"></i>
+                  <p>تولید منحصر به فرد</p>
+                </div>
+
+                <div class="flex items-center gap-x-2">
+                  <i class="fa-regular fa-circle-check text-blue"></i>
+                  <p>فناوری روز دنیا</p>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-y-4">
+                <div class="flex items-center gap-x-2">
+                  <i class="fa-regular fa-circle-check text-blue"></i>
+                  <p>پارچه های برندهای ترک</p>
+                </div>
+
+                <div class="flex items-center gap-x-2">
+                  <i class="fa-regular fa-circle-check text-blue"></i>
+                  <p>چوب های راش وارداتی</p>
+                </div>
+
+                <div class="flex items-center gap-x-2">
+                  <i class="fa-regular fa-circle-check text-blue"></i>
+                  <p>مناسب برای تمامی فضا ها</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- more titels -->
+            <div
+              class="bg-white w-full h-32 flex items-center justify-between md:more-detail mt-20"
+            >
+              <div class="flex flex-col items-center">
+                <p>210cm * 70cm</p>
+                <i class="fas fa-arrow-right-long text-xl"></i>
+                <h3 class="text-blue font-bold mt-3 text-xl">ابعاد</h3>
+              </div>
+
+              <div class="flex gap-x-2">
+                <div class="flex flex-col items-center">
+                  <p class="text-sm">مشکی</p>
+                  <div
+                    class="w-[30px] h-[30px] bg-black color my-3 cursor-pointer"
+                  ></div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <p class="text-sm">طوسی</p>
+                  <div
+                    class="w-[30px] h-[30px] bg-gray color my-3 cursor-pointer"
+                  ></div>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <p class="text-sm">زرد</p>
+                  <div
+                    class="w-[30px] h-[30px] bg-yellow-400 color my-3 cursor-pointer"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <h3>
+                  چستر<br />
+                  <span class="text-blue font-bold">بلو کاربونو</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- products -->
+    <section id="products" class="products">
+      <div class="container">
+        <div
+          class="flex flex-col md:flex-row md:items-center md:justify-between gap-y-12"
+        >
+          <!-- titile and navigation -->
+          <div>
+            <h3 class="heading text-right">محصولات</h3>
+            <p class="text-sm text-gray">
+              محصولات برند ما و برنده های برتر دنیا
+            </p>
+          </div>
+          <!-- categories -->
+          <div>
+            <ul class="flex mr-3 mb-[100px]">
+              <li class="gategory-item">همه</li>
+              <li class="gategory-item">صندلی</li>
+              <li class="gategory-item">مبل</li>
+              <li class="gategory-item">میز</li>
+              <li class="gategory-item">لامپ</li>
+              <li class="gategory-item">آینه</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- products panel -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 md:gap-x-5 gap-y-14 text-center md:text-right"
+        >
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product2.jpg"
+                alt="product"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">صندلی کلاسیک</h3>
+              <p class="text-gray text-sm">
+                صندلی چوبی، یک قطعه مبلمان کلاسیک و زیباست که به عنوان یک عنصر
+                دکوراسیونی محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">600,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">صندلی مینیمال</h3>
+              <p class="text-gray text-sm">
+                صندلی چوبی، یک قطعه مبلمان کلاسیک و زیباست که به عنوان یک عنصر
+                دکوراسیونی محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">800,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">میز و صندلی مینیمال</h3>
+              <p class="text-gray text-sm">
+                صندلی چوبی، یک قطعه مبلمان کلاسیک و زیباست که به عنوان یک عنصر
+                دکوراسیونی محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">650,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product5.jpg"
+                alt="product"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">لامپ و چراغ مطالع</h3>
+              <p class="text-gray text-sm">
+                لامپ alex یک قطعه مبلمان کلاسیک و زیباست که به عنوان یک عنصر
+                دکوراسیونی محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">449,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product6.jpg"
+                alt="product"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">مبل راحتی</h3>
+              <p class="text-gray text-sm">
+                صندلی چوبی، یک قطعه مبلمان کلاسیک و زیباست که به عنوان یک عنصر
+                دکوراسیونی محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">
+                  1,000,000 تومان
+                </p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product10.jpg"
+                alt="product"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">لامپ مینمیال</h3>
+              <p class="text-gray text-sm">
+                لامپ نِونی یک قطعه مدرن و زیباست که به عنوان یک عنصر دکوراسیونی
+                محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">749,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product12.jpg"
+                alt="product"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">میز چوبی</h3>
+              <p class="text-gray text-sm">
+                میز چوبی، یک قطعه کلاسیک و زیباست که به عنوان یک عنصر دکوراسیونی
+                محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">500,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-slate-400 rounded-full"></div>
+                  <div class="w-5 h-5 bg-yellow-800 rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="w-[200px] h-[200px] mx-auto">
+              <img
+                class="object-cover h-full w-full"
+                src="../images/product9.jpg"
+                alt="product"
+              />
+            </div>
+            <div class="p-5">
+              <h3 class="font-bold text-lg mb-2">گلدان ژاپنی</h3>
+              <p class="text-gray text-sm">
+                گلدان ژاپنی یک قطعه کلاسیک و زیباست که به عنوان یک عنصر
+                دکوراسیونی محبوب در فضاهای مختلف به کار می‌رود
+              </p>
+              <div class="flex items-center justify-between mt-7">
+                <p class="font-bold text-black cursor-pointer">300,000 تومان</p>
+                <div class="flex gap-x-2">
+                  <div class="w-5 h-5 bg-white rounded-full"></div>
+                  <div class="w-5 h-5 bg-black rounded-full"></div>
+                  <div class="w-5 h-5 bg-neutral-400 rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center md:text-center">
+          <button
+            class="blue-btn bg-white border-2 border-blue text-blue hover:bg-blue hover:text-white duration-3000 hover:border-white my-[100px]"
+          >
+            مشاهده همه
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- section customer opinion -->
+    <section id="customer" class="mb-[200px]">
+      <div class="container flex flex-col">
+        <!-- title -->
+        <div class="mb-[100px]">
+          <h3 class="heading">نظرات <span class="text-blue">کاربران </span></h3>
+        </div>
+
+        <!-- custome div -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-10">
+          <!-- div img -->
+          <div class="relative h-[50vh] flex items-center justify-center">
+            <div class="mx-auto">
+              <img
+                class="customer coutomer-1"
+                src="../images/uifaces-popular-image (1).jpg"
+                alt=""
+              />
+              <img
+                class="customer coutomer-2"
+                src="../images/uifaces-popular-image (2).jpg"
+                alt=""
+              />
+              <img
+                class="customer coutomer-3"
+                src="../images/uifaces-popular-image (3).jpg"
+                alt=""
+              />
+              <img
+                class="customer coutomer-4"
+                src="../images/uifaces-popular-image (4).jpg"
+                alt=""
+              />
+              <img
+                class="customer coutomer-5"
+                src="../images/uifaces-popular-image.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- div customer opinion -->
+          <div class="flex items-center justify-between">
+            <!-- this is for numbers of customers -->
+            <div
+              class="flex flex-col items-center justify-evenly gap-2 h-[300px] ml-3"
+            >
+              <button
+                class="px-3 py-2 font-black text-blue text-lg customer-number"
+                data-customer-opinion
+              >
+                1
+              </button>
+              <button
+                class="px-3 py-2 font-black text-gray text-lg customer-number"
+                data-customer-opinion
+              >
+                2
+              </button>
+              <button
+                class="px-3 py-2 font-black text-gray text-lg customer-number"
+                data-customer-opinion
+              >
+                3
+              </button>
+              <button
+                class="px-3 py-2 font-black text-gray text-lg customer-number"
+                data-customer-opinion
+              >
+                4
+              </button>
+              <button
+                class="px-3 py-2 font-black text-gray text-lg customer-number"
+                data-customer-opinion
+              >
+                5
+              </button>
+            </div>
+            <!-- this is for opinion -->
+            <div
+              class="flex flex-1 px-10 flex-col bg-[#bcbcbc5e] rounded-md h-[300px] relative"
+            >
+              <div class="py-10 flex flex-col">
+                <h3 class="font-bold text-2xl">علیرضا محمدی</h3>
+                <p class="text-sm mt-2 font-bold">خریدار</p>
+                <p class="mt-[50px] text-gray">
+                  از زمانی که از فروشگاه "ای کی" خرید کردم، تجربه فوق‌العاده‌ای
+                  داشته‌ام. محصولات این فروشگاه واقعاً با کیفیت بالا هستند و
+                  طراحی‌های منحصر به فردی دارند که واقعاً از هر چیزی که تا به
+                  حال دیده‌ام متمایز می‌شوند.
+                </p>
+
+                <div class="qote">
+                  <img
+                    width="100"
+                    height="100"
+                    src="https://img.icons8.com/ios-filled/4361ee/quote-right.png"
+                    alt="quote-right"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer md:mt-[100px]">
+      <div class="h-full">
+        <!-- this is for links on footer -->
+        <div class="col-span-12 flex items-start justify-around flex-wrap p-3">
+          <div class="flex-col flex">
+            <h3 class="my-3 font-bold text-xl text-blue">صفحه ها</h3>
+            <ul class="flex flex-col gap-y-3">
+              <li><a href="" class="footer-link">صفحه اصلی</a></li>
+              <li><a href="#products" class="footer-link">فروشگاه</a></li>
+              <li><a href="#services" class="footer-link">سرویس ها</a></li>
+            </ul>
+          </div>
+
+          <div class="flex-col flex text-start">
+            <h3 class="my-3 font-bold text-xl text-blue">درباره ما</h3>
+            <ul class="flex flex-col gap-y-3">
+              <li><a href="#" class="footer-link">سوابق</a></li>
+              <li><a href="#" class="footer-link"> اعضای تیم</a></li>
+              <li><a href="#" class="footer-link"> پروزه </a></li>
+              <li>
+                <a href="#" class="footer-link"> پروزه های در حال اجرا</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex-col flex text-start gap-2">
+            <h3 class="my-3 font-bold text-xl text-blue">راه های ارتباطی</h3>
+            <ul class="flex flex-col gap-y-3">
+              <li class="contact-item">
+                <i class="fa-solid fa-phone-volume contact-link"></i>
+                <div class="contact-text">
+                  <p class="">(+98)923 229 89 76</p>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="footer-link contact-text hidden">
+                  تهران شهریار خیابان ولیعصر میدان معلم به سمت رستوران ارکیده
+                  کوچه شیخ طبرسی
+                </p>
+              </li>
+
+              <li class="contact-item">
+                <i class="fa-solid fa-paper-plane"></i>
+                <p class="footer-link contact-text hidden">
+                  zip Code : 75141253661
+                </p>
+              </li>
+              <li class="contact-item">
+                <i class="fa-solid fa-handshake"></i>
+                <p class="footer-link contact-text hidden">
+                  mohammadalirezaie081@gmail.com
+                </p>
+              </li>
+            </ul>
+          </div>
+          <!-- this is for social icons-->
+          <div class="flex flex-col items-start gap-x-4 justify-center">
+            <h3 class="my-3 font-bold text-xl text-blue">سوشیال مدیا</h3>
+            <div class="flex md:gap-y-5 gap-x-7 items-center">
+              <i class="fa-brands fa-instagram soical-icons"></i>
+              <i class="fa-brands fa-youtube soical-icons"></i>
+              <i class="fa-brands fa-twitter soical-icons"></i>
+              <i class="fa-brands fa-tiktok soical-icons"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- custom js-->
+    <script src="../dist/main.js"></script>
+    <!-- <script src="../exercice.js"></script> -->
+    <!-- fontawsoem -->
+    <script
+      src="https://kit.fontawesome.com/f82e7d4fe2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
