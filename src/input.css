@@ -28,8 +28,11 @@
   }
 
   .blue-btn {
-    font-size: 18px;
-    padding: 8px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    /* padding: 8px 30px; */
+    width: 100px;
+    padding: 8px 0;
     background-color: #4361ee;
     color: #fff;
     border-radius: 5px;
@@ -87,22 +90,6 @@
   .badge {
     background-color: #6c757d9a;
   }
-  .feature-img {
-    width: 60px;
-    height: 60px;
-    background-color: #6c757d9a;
-    border-radius: 5px;
-    position: relative;
-  }
-  .feature-img i {
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #4361ee;
-    color: white;
-    position: absolute;
-    top: -15px;
-    left: -5px;
-  }
   .heading {
     text-align: center;
     font-size: 26px;
@@ -137,6 +124,11 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.45s ease;
+  }
+  .product:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
   }
 
   .product div img {
@@ -278,7 +270,8 @@
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
   }
 
-  .log-in , .sign-up {
+  .log-in,
+  .sign-up {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,23 +293,86 @@
     color: #242424;
   }
 
-  .log-in:active , .sign-up:active{
+  .log-in:active,
+  .sign-up:active {
     box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
   }
 
-  .input-btn{
+  .input-btn {
     padding: 10px 10px;
     border-radius: 5px;
     border: 2px solid #b8b8b8;
     font-size: 12px;
     text-align: left;
   }
-  .input-btn:focus{
+  .input-btn:focus {
     outline: 2px solid #4361ee;
   }
-  .login-img{
+  .login-img {
     width: 50%;
     height: 50%;
     transform: scale(1.3);
+  }
+
+  .slider-container {
+    margin-top: 100px;
+    display: grid;
+    padding: 20px 0;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr 1fr;
+    overflow-x: hidden;
+    column-gap: 30px;
+  }
+  .featuers .container {
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.3);
+  }
+  .feature-img i {
+    font-size: 20px;
+    color: #4361ee;
+    margin-left: 10px;
+  }
+  .featuer-box {
+    animation: move-in 1s 0.3s linear;
+  }
+  .featuer-box:nth-child(2) {
+    animation: move-in 1s 0.5s linear;
+  }
+  .featuer-box:nth-child(3) {
+    animation: move-in 1s 0.7s linear;
+  }
+  .featuer-box:nth-child(4) {
+    animation: move-in 1s 0.9s linear;
+  }
+  .featuer-box:nth-child(5) {
+    animation: move-in 1s 1s linear;
+  }
+  @keyframes move-in {
+    0% {
+      transform: translateX(-2000px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+  @keyframes move-right {
+    0% {
+      transform: translateX(2000px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  h1.anim-move-right {
+    animation: move-right 0.6s forwards linear;
+  }
+  p.anim-move-right {
+    animation: move-right 0.6s 0.4s forwards linear;
+  }
+  .anim-move-right {
+    animation: move-right 0.6s 0.8s forwards linear;
+  }
+  a.anim-move-right {
+    animation: move-right 0.6s 1s forwards linear;
   }
 }

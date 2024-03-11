@@ -16,7 +16,7 @@
       >
         <h3 class="">
           <span
-            class="font-bold tracking-tighter text-lg text-blue ml-2 cursor-pointer"
+            class="font-bold tracking-tighter text-2xl text-blue ml-2 cursor-pointer"
             >AK</span
           >ای کی دیزاین
         </h3>
@@ -85,7 +85,9 @@
 
         <!-- action btns for login and shoping basket -->
         <div class="hidden md:flex md:items-center">
-          <button class="blue-btn ml-2"><a href="login-page.html">ورود</a></button>
+          <button class="blue-btn ml-2">
+            <a href="login-page.html">ورود</a>
+          </button>
           <img
             width="20"
             height="20"
@@ -107,26 +109,30 @@
         <!-- right -->
         <div class="pr-14 pt-10 w-full md:max-w-[70%]">
           <!-- heading for the landing page and left section -->
-          <h1 class="text-4xl md:text-5xl font-bold mb-5 md:leading-[60px]">
+          <h1
+            class="text-4xl md:text-5xl font-bold mb-5 md:leading-[60px] anim-move-right"
+          >
             <span class="text-blue"> دیزاین داخلی </span> , مناسب <br />شور و
             اشتیاق در زندگی
           </h1>
-          <p class="text-gray">
+          <p class="text-gray anim-move-right">
             باما طراحی مبلمان مدرن و با حس خریدلحظه ای و قیمتی مقرون به صرفه را
             تجربه کنید .با کارشناسان ما به صورت تلفنیو در منزل خود صحبت کنید و
             مشاوره بگیرید
           </p>
           <!-- this div for btns -->
           <div class="mt-7 flex items-center">
-            <button class="blue-btn font-bold">
+            <button class="blue-btn font-bold anim-move-right">
               خرید
               <i class="fas fa-arrow-left-long align-middle mr-2"></i>
             </button>
             <a
-              class="mr-10 font-bold hover:hover-effect-blue duration-[2s]"
+              class="mr-10 font-bold hover:hover-effect-blue duration-[2s] anim-move-right"
               href="contact"
             >
-              <i class="fa-solid fa-phone-volume fa-flip-horizontal ml-2"></i
+              <i
+                class="fa-solid fa-phone-volume fa-flip-horizontal ml-2 anim-move-right"
+              ></i
               >تماس با ما</a
             >
           </div>
@@ -181,8 +187,8 @@
     </section>
 
     <!-- features  -->
-    <section id="services" class="featuers mt-[100px]">
-      <div class="container my-10">
+    <section class="featuers mt-[100px]">
+      <div class="container max-w-[90%] my-10 py-5">
         <div class="text-center">
           <h2 class="heading">
             بهترین <span class="text-blue">سرویس ها</span> برای شما
@@ -193,7 +199,9 @@
         <div
           class="wrapper grid grid-cols-2 md:grid-cols-4 items-center justify-between my-7 gap-6"
         >
-          <div class="flex items-center md:justify-center p-1 feature">
+          <div
+            class="featuer-box flex items-center md:justify-center p-1 feature"
+          >
             <div class="feature-img">
               <i class="fa-regular fa-circle-question"></i>
             </div>
@@ -204,7 +212,9 @@
             </div>
           </div>
 
-          <div class="flex items-center md:justify-center p-1 feature">
+          <div
+            class="featuer-box flex items-center md:justify-center p-1 feature"
+          >
             <div class="feature-img">
               <i class="fa-solid fa-truck"></i>
             </div>
@@ -215,7 +225,9 @@
             </div>
           </div>
 
-          <div class="flex items-center md:justify-center p-1 feature">
+          <div
+            class="featuer-box flex items-center md:justify-center p-1 feature"
+          >
             <div class="feature-img">
               <i class="fa-regular fa-comments"></i>
             </div>
@@ -226,7 +238,9 @@
             </div>
           </div>
 
-          <div class="flex items-center md:justify-center p-1 feature">
+          <div
+            class="featuer-box flex items-center md:justify-center p-1 feature"
+          >
             <div class="feature-img">
               <i class="fa-regular fa-handshake"></i>
             </div>
@@ -239,6 +253,28 @@
         </div>
       </div>
     </section>
+
+    <!-- product slider  -->
+    <section id="slider">
+      <div class="container w-full h-full relative">
+        <div id="slider-container" class="slider-container"></div>
+
+        <!-- slider btns -->
+        <div
+          id="prev-btn"
+          class="prev-btn cursor-pointer slider-btn absolute top-1/2 -translate-y-1/2 left-2 p-3 bg-[#dfdfdf] rounded-md"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+        </div>
+        <div
+          id="next-btn"
+          class="next-btn cursor-pointer slider-btn absolute top-1/2 -translate-y-1/2 right-2 p-3 bg-[#dfdfdf] rounded-md"
+        >
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+
     <!-- newest product -->
     <section id="decorasion" class="my-[150px]">
       <div class="container grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -246,7 +282,7 @@
         <div class="w-full h-[600px] md:order-2">
           <img
             class="object-cover h-full w-full rounded-md"
-            src="/images/product1.jpg"
+            src="../images/product1.jpg"
             alt="white-minimal-sofa"
           />
         </div>
@@ -256,7 +292,7 @@
             <!-- heading -->
             <div>
               <h2 class="heading text-right">
-                بهترین <span class="text-blue">سرویس ها</span> برای شما
+                جدیدترین <span class="text-blue">مبلمان </span> برای شما
               </h2>
               <p class="text-gray text-right my-12">
                 مبل‌های مینیمال یک انتخاب عالی برای دکوراسیون منزل شما می‌باشند.
@@ -307,12 +343,16 @@
 
             <!-- more titels -->
             <div
-              class="bg-white w-full h-32 flex items-center justify-between md:more-detail mt-20"
+              class="bg-slate-300 md:bg-white w-full h-full md:h-32 flex flex-col md:flex-row gap-y-3 px-3 items-center justify-between md:more-detail mt-20"
             >
               <div class="flex flex-col items-center">
-                <p>210cm * 70cm</p>
-                <i class="fas fa-arrow-right-long text-xl"></i>
-                <h3 class="text-blue font-bold mt-3 text-xl">ابعاد</h3>
+                <p class="order-2 md:oredr-1">210cm * 70cm</p>
+                <i
+                  class="fas fa-arrow-right-long text-xl order-3 md:order-2"
+                ></i>
+                <h3 class="text-blue font-bold mt-3 text-xl order-1 md:order-2">
+                  ابعاد
+                </h3>
               </div>
 
               <div class="flex gap-x-2">
@@ -364,7 +404,7 @@
           </div>
           <!-- categories -->
           <div>
-            <ul class="flex mr-3 mb-[100px]">
+            <ul class="flex flex-wrap mr-3 mb-[100px]">
               <li class="gategory-item">همه</li>
               <li class="gategory-item">صندلی</li>
               <li class="gategory-item">مبل</li>
@@ -635,7 +675,7 @@
           <div class="flex items-center justify-between">
             <!-- this is for numbers of customers -->
             <div
-              class="flex flex-col items-center justify-evenly gap-2 h-[300px] ml-3"
+              class="flex flex-col h-full md:h-[300px] items-center justify-evenly gap-2 ml-3"
             >
               <button
                 class="px-3 py-2 font-black text-blue text-lg customer-number"
@@ -670,7 +710,7 @@
             </div>
             <!-- this is for opinion -->
             <div
-              class="flex flex-1 px-10 flex-col bg-[#bcbcbc5e] rounded-md h-[300px] relative"
+              class="flex flex-1 h-full px-10 flex-col bg-[#bcbcbc5e] rounded-md md:h-[300px] relative"
             >
               <div class="py-10 flex flex-col">
                 <h3 class="font-bold text-2xl">علیرضا محمدی</h3>
@@ -699,71 +739,94 @@
 
     <!-- footer -->
     <footer class="footer md:mt-[100px]">
-      <div class="h-full">
-        <!-- this is for links on footer -->
-        <div class="col-span-12 flex items-start justify-around flex-wrap p-3">
-          <div class="flex-col flex">
-            <h3 class="my-3 font-bold text-xl text-blue">صفحه ها</h3>
-            <ul class="flex flex-col gap-y-3">
-              <li><a href="" class="footer-link">صفحه اصلی</a></li>
-              <li><a href="#products" class="footer-link">فروشگاه</a></li>
-              <li><a href="#services" class="footer-link">سرویس ها</a></li>
+      <div
+        class="container flex flex-wrap items-center justify-between w-full h-full py-10 gap-y-8"
+      >
+        <div class="flex flex-col flex-1 items-start justify-between">
+          <h2 class="text-xl font-bold">AkDisign</h2>
+          <p class="w-[300px] md:w-[400px] py-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod vitae
+            aperiam soluta asperiores quis in quisquam perspiciatis voluptate
+          </p>
+          <div class="flex items-center gap-x-5">
+            <i
+              class="fa-brands fa-instagram text-xl font-bold soical-icons"
+            ></i>
+            <i class="fa-brands fa-twitter text-xl font-bold soical-icons"></i>
+            <i
+              class="fa-brands fa-pinterest-p text-xl font-bold soical-icons"
+            ></i>
+            <i class="fa-brands fa-youtube text-xl font-bold soical-icons"></i>
+          </div>
+        </div>
+
+        <div class="flex-1 flex flex-wrap items-start justify-between">
+          <div>
+            <h2 class="font-bold text-xl">محصولات</h2>
+            <ul class="flex flex-col my-5 gap-y-2">
+              <li class="footer-item">
+                <a href="#" class="footer-link">مبلمان</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">میز نهارخوری</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">میز و صندلی</a>
+              </li>
+              <li class="footer-item">
+                <a href="#" class="footer-link">چراغ مطالع </a>
+              </li>
             </ul>
           </div>
 
-          <div class="flex-col flex text-start">
-            <h3 class="my-3 font-bold text-xl text-blue">درباره ما</h3>
-            <ul class="flex flex-col gap-y-3">
-              <li><a href="#" class="footer-link">سوابق</a></li>
-              <li><a href="#" class="footer-link"> اعضای تیم</a></li>
-              <li><a href="#" class="footer-link"> پروزه </a></li>
-              <li>
-                <a href="#" class="footer-link"> پروزه های در حال اجرا</a>
+          <div>
+            <h2 class="text-xl font-bold">فعالیت ها</h2>
+            <ul class="flex flex-col my-5 gap-y-2">
+              <li class="footer-item">
+                <a class="footer-link" href="#">رتبه بندی </a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">فعالیت ها </a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">جوایز</a>
               </li>
             </ul>
           </div>
 
-          <div class="flex-col flex text-start gap-2">
-            <h3 class="my-3 font-bold text-xl text-blue">راه های ارتباطی</h3>
-            <ul class="flex flex-col gap-y-3">
-              <li class="contact-item">
-                <i class="fa-solid fa-phone-volume contact-link"></i>
-                <div class="contact-text">
-                  <p class="">(+98)923 229 89 76</p>
-                </div>
+          <div>
+            <h2 class="text-xl font-bold">درباره ما</h2>
+            <ul class="flex flex-col my-5 gap-y-2">
+              <li class="footer-item">
+                <a class="footer-link" href="#">مهندسان</a>
               </li>
-
-              <li class="contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p class="footer-link contact-text hidden">
-                  تهران شهریار خیابان ولیعصر میدان معلم به سمت رستوران ارکیده
-                  کوچه شیخ طبرسی
-                </p>
+              <li class="footer-item">
+                <a class="footer-link" href="#">اعضای تیم </a>
               </li>
-
-              <li class="contact-item">
-                <i class="fa-solid fa-paper-plane"></i>
-                <p class="footer-link contact-text hidden">
-                  zip Code : 75141253661
-                </p>
-              </li>
-              <li class="contact-item">
-                <i class="fa-solid fa-handshake"></i>
-                <p class="footer-link contact-text hidden">
-                  mohammadalirezaie081@gmail.com
-                </p>
+              <li class="footer-item">
+                <a class="footer-link" href="#">هیت مدیره</a>
               </li>
             </ul>
           </div>
-          <!-- this is for social icons-->
-          <div class="flex flex-col items-start gap-x-4 justify-center">
-            <h3 class="my-3 font-bold text-xl text-blue">سوشیال مدیا</h3>
-            <div class="flex md:gap-y-5 gap-x-7 items-center">
-              <i class="fa-brands fa-instagram soical-icons"></i>
-              <i class="fa-brands fa-youtube soical-icons"></i>
-              <i class="fa-brands fa-twitter soical-icons"></i>
-              <i class="fa-brands fa-tiktok soical-icons"></i>
-            </div>
+
+          <div>
+            <h2 class="font-bold text-xl">تماس با ما</h2>
+            <ul class="flex flex-col gap-y-3 my-5">
+              <li class="text-sm font-bold">
+                آدرس ایمیل : <br />
+                mohamamd@.com
+              </li>
+
+              <li class="text-sm font-bold">
+                شماره تلفن: <br />
+                <pre> 0933-405-55-39</pre>
+              </li>
+
+              <li class="text-sm font-bold">
+                فروشگاه: <br />
+                تهران اکباتان خیابان نفیسی
+              </li>
+            </ul>
           </div>
         </div>
       </div>

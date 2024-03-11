@@ -1,7 +1,7 @@
 {
   "name": "hnteror",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello guys this is my first try to create a webPage .  I used HTML / CSS / TAILWIND / vanila Java Script .",
   "main": "index.js",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
@@ -10,5 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.4.0"
-  }
+  },
+  "keywords": []
 }
